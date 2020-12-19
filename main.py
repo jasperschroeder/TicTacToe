@@ -20,12 +20,6 @@ def display_board(game):
     print('\n')
 
 
-def clean_board(game):
-    board = game.board
-    for i in range(len(board)):
-        board[i] = "-"
-
-
 def drawx(game, pos):
     board = game.board
     board[pos-1] = 'X'
