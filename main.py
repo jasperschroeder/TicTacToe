@@ -8,9 +8,6 @@ class TicTacToe:
         self.active = True
         self.openSpots = 9
 
-    def reset_board(self):
-        self.board = playingboard
-
 
 def display_board(game):
     board = game.board
@@ -66,7 +63,7 @@ def check_win(game):
 
 
 def check_tie(game):
-    if (game.active is True) & (game.openSpots == 0):
+    if game.active is True:
         print("Game Over! This is a tie.")
         game.active = False
 
